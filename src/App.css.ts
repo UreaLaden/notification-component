@@ -1,16 +1,29 @@
 import { mergeStyleSets } from "@fluentui/react";
-import { snow } from "./utilities/colors";
+import { snow, white } from "./utilities/colors";
 
 export const styles = mergeStyleSets({
+    parentContainer:{
+        backgroundColor:snow,
+        height:'100vh',
+        width:'100vw',
+        display:"grid",
+        'grid-template-columns':"1fr"
+    },
     appContainer: {
-        backgroundColor: "blue",
-        width:"50%",
+        backgroundColor: white,
         height:"85vh",
-        margin:"10% auto",
-        "@media screen and (max-width:400px)": {
-            width: "100%",
-            height:"100vh",
-            backgroundColor: "purple",
+        borderRadius:"2%",
+        "grid-row-start":1,
+        "grid-column-start":1,
+        margin:"5% 25%",
+        "align-self":"center",
+        "justify-content":"center",
+        boxShadow: "0 6px 90px 0 rgb(0 0 0 / 5%)",
+        "@media screen and (max-width:500px)": {
+            width: "100em",
+            height:"100%",
+            backgroundColor: white,
+            margin:"unset"
         },
     },
 })
