@@ -10,7 +10,7 @@ export const styles = mergeStyleSets({
         "@media screen and (max-width:400px)": {
             width: "100%",
             height:"100vh",
-            backgroundColor: "red",
+            backgroundColor: "purple",
         },
     },
 })
