@@ -2,18 +2,27 @@ import React from 'react';
 import {
   styles
 } from './App.css';
+import Notification, { UserDetailProps } from './components/Notification';
+import NotificationHeader from './components/NotificationHeader';
 function App() {
+
+  const user:UserDetailProps = {
+    username:"Leaundrae Mckinney",
+    target:"Get Money",
+    imageUrl:'../../assets/images/avatar-angela-gray.webp'
+  }
+
   return (
     <div className={styles.parentContainer}>
       <div className={styles.appContainer}>
         <div className={styles.contentContainer}>
-          <div className={styles.header}>
-            <div className={styles.title}>
-              Notifications
-              <div className={styles.notificationCount}>3</div>
-            </div>
-            <div className={styles.readText}>Mark all as read</div>
-          </div>
+          <NotificationHeader />
+          <Notification 
+            user={user}
+            action={'follow'}
+            isRead={false}
+            notificationDate={new Date()}
+          />
         </div>
       </div>
     </div>

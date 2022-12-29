@@ -26,45 +26,12 @@ export const styles = mergeStyleSets({
             margin: "unset"
         },
     },
-    header: {
-        display: 'flex',
-        flexDirection: "row",
-        justifyContent: "space-between",
-        alignItems:"center",
-    },
+    
     contentContainer: {
         height: '100vh',
         margin: '4%',
         alignItems: "center"
     },
-    title: {
-        fontSize: '2vh',
-        color: veryDarkBlue,
-        fontFamily: 'Plus Jakarta Sans, sans-serif',
-        fontStyle: 'normal',
-        fontWeight: 800,
-        lineHeight: '30px',
-        display:"flex"
-    },
-    readText: {
-        fontSize: '1vh',
-        color: darkGreyBlue,
-        fontFamily: 'Plus Jakarta Sans, sans-serif',
-        fontStyle: 'normal',
-        fontWeight: 500,
-        lineHeight: '20px',
-    },
-    notificationCount:{
-        backgroundColor:blue,
-        color:white,
-        width:"3vw",
-        height:"100%",
-        marginLeft:"10px",
-        borderRadius:"5px",
-        textAlign:"center",
-        "@media screen and (max-width:500px)":{
-            borderRadius:"5px",
-            width:"8vw",
-        }
-    }
+  
+    
 })
