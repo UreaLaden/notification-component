@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/notification-component/static/css/main.617c5a1b.css",
+    "main.js": "/notification-component/static/js/main.15f02f05.js",
+    "static/media/avatar-rizky-hasanuddin.webp": "/notification-component/static/media/avatar-rizky-hasanuddin.2c9e9a5d4982e8f1b614.webp",
+    "static/media/avatar-jacob-thompson.webp": "/notification-component/static/media/avatar-jacob-thompson.ef1880754355ebe956bb.webp",
+    "static/media/avatar-nathan-peterson.webp": "/notification-component/static/media/avatar-nathan-peterson.03727540c8ed8341d745.webp",
+    "static/media/avatar-anna-kim.webp": "/notification-component/static/media/avatar-anna-kim.14242399b99facbf45c7.webp",
+    "static/media/avatar-mark-webber.webp": "/notification-component/static/media/avatar-mark-webber.e3e820b976dfaf7f762a.webp",
+    "static/media/image-chess.webp": "/notification-component/static/media/image-chess.b06cd5b36869c9a4784e.webp",
+    "static/media/avatar-kimberly-smith.webp": "/notification-component/static/media/avatar-kimberly-smith.00520dc2b2f8e585aac5.webp",
+    "index.html": "/notification-component/index.html",
+    "main.617c5a1b.css.map": "/notification-component/static/css/main.617c5a1b.css.map",
+    "main.15f02f05.js.map": "/notification-component/static/js/main.15f02f05.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.617c5a1b.css",
+    "static/js/main.15f02f05.js"
+  ]
+}
