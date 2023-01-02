@@ -8,7 +8,11 @@ export const styles = mergeStyleSets({
         fontFamily: 'Plus Jakarta Sans, sans-serif',
         fontStyle: 'normal',
         fontWeight: 500,
-        lineHeight: '20px',        
+        lineHeight: '20px',    
+        ":hover":{
+            cursor:"pointer",
+            color:blue
+        }    
     },
     notificationCount:{
         backgroundColor:blue,
@@ -23,12 +27,13 @@ export const styles = mergeStyleSets({
         }
     },  title: {
         fontSize: '2vh',
-        color: blue,
+        color: veryDarkBlue,
         fontFamily: 'Plus Jakarta Sans, sans-serif',
         fontStyle: 'normal',
         fontWeight: 800,
         lineHeight: '30px',
-        display:"flex"
+        display:"flex",
+        
     },
     header: {
         display: 'flex',
