@@ -6,3 +6,4 @@ export const darkGreyBlue= "#5E6778";
 export const blue = "#0A327B";
 export const veryLightBlue = "#DDE7EE";
 export const red = "#F65552";
+export const greyBlue ="#939CAD";

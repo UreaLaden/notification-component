@@ -3,19 +3,19 @@ import { darkGreyBlue, blue, white, veryDarkBlue } from "../utilities/colors";
 
 export const styles = mergeStyleSets({
     readText: {
-        fontSize: '1vh',
+        fontSize: '1.25vh',
         color: darkGreyBlue,
         fontFamily: 'Plus Jakarta Sans, sans-serif',
         fontStyle: 'normal',
         fontWeight: 500,
-        lineHeight: '20px',
+        lineHeight: '20px',        
     },
     notificationCount:{
         backgroundColor:blue,
         color:white,
-        width:"2vw",
+        width:"3vw",
         marginLeft:"10px",
-        borderRadius:"10%",
+        borderRadius:"20%",
         textAlign:"center",
         "@media screen and (max-width:500px)":{
             borderRadius:"5px",
@@ -23,7 +23,7 @@ export const styles = mergeStyleSets({
         }
     },  title: {
         fontSize: '2vh',
-        color: veryDarkBlue,
+        color: blue,
         fontFamily: 'Plus Jakarta Sans, sans-serif',
         fontStyle: 'normal',
         fontWeight: 800,

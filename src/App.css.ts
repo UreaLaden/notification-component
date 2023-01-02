@@ -4,8 +4,8 @@ import {  snow, white } from "./utilities/colors";
 export const styles = mergeStyleSets({
     parentContainer: {
         backgroundColor: snow,
-        height: '100vh',
-        width: '100vw',
+        height: '100%',
+        width: '100%',
         display: "grid",
         'grid-template-columns': "1fr"
     },
@@ -16,7 +16,7 @@ export const styles = mergeStyleSets({
     },
     appContainer: {
         backgroundColor: white,
-        height: "100vh",
+        height: "90%",
         borderRadius: "2%",
         "grid-row-start": 1,
         "grid-column-start": 1,
@@ -33,7 +33,7 @@ export const styles = mergeStyleSets({
     },
     
     contentContainer: {
-        height: '100vh',
+        height: '100%',
         margin: '4%',
         alignItems: "center"
     },

@@ -1,15 +1,15 @@
 import {mergeStyleSets} from '@fluentui/react';
-import { red, snow } from '../utilities/colors';
+import { blue, darkGreyBlue, greyBlue, lightGreyBlue, red, snow } from '../utilities/colors';
 
 export const styles = mergeStyleSets({
     entrySelectionContainer:{
-        padding:"2%",
+        padding:"1.5vh",
         borderRadius:"5px",
     },
     entryContainerNew:{
         backgroundColor:snow,
         display:"flex",
-        padding:"2%",
+        padding:"1.5vh",
         borderRadius:"5px",
     },
     newBubble:{
@@ -28,10 +28,14 @@ export const styles = mergeStyleSets({
         fontWeight:700,
         overflow:"revert !important",
         whiteSpace:"normal",
-        height:"fit-content"
+        height:"fit-content",
+        color:blue,
     },
     secondaryText:{
-        marginBottom:"8px"
+        marginBottom:"8px",
+        marginTop:"8px",
+        fontSize:"14px",
+        color:greyBlue
     },
     primaryTextContainer:{
         display:"flex",
@@ -39,8 +43,9 @@ export const styles = mergeStyleSets({
     },
     primaryTextAction:{
         marginLeft:"5px",
-        fontWeight:400,
-        width:"100%"
+        fontWeight:500,
+        width:"100%",
+        color:darkGreyBlue
     },
     primaryTextTarget:{},
     primaryTextPost:{},
@@ -52,8 +57,12 @@ export const styles = mergeStyleSets({
     messageContainer:{
       border:"1px solid #DDE7EE",
       marginLeft:"60px",
+      marginTop:"12px",
       padding:"5%",
-      borderRadius:"5px"  
+      borderRadius:"5px",
+      fontSize:"1vh",
+      color:darkGreyBlue,
+      fontWeight:500
     },
 })
 
