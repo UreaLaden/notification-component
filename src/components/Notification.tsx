@@ -1,5 +1,4 @@
-import { IProcessedStyleSet, Persona, PersonaSize, Stack } from '@fluentui/react';
-import * as React from 'react';
+import { Persona, PersonaSize, Stack } from '@fluentui/react';
 import { NotificationAction, UserDetailProps } from '../utilities/users';
 import { styles } from './Notification.css';
 

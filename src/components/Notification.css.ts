@@ -3,7 +3,6 @@ import {
   blue,
   darkGreyBlue,
   greyBlue,
-  lightGreyBlue,
   red,
   snow,
   veryDarkBlue,
