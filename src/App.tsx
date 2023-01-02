@@ -2,26 +2,20 @@ import React from 'react';
 import {
   styles
 } from './App.css';
-import Notification, { UserDetailProps } from './components/Notification';
+import Notification from './components/Notification';
 import NotificationHeader from './components/NotificationHeader';
-function App() {
+import { getUsers } from './utilities/users';
 
-  const user: UserDetailProps = {
-    username: "Leaundrae Mckinney",
-    target: "Get Money",
-    imageUrl: `${process.env.PUBLIC_URL}/images/image-chess.png`
-  }
+function App() {
+  const users = getUsers();
   return (
     <div className={styles.parentContainer}>
       <div className={styles.appContainer}>
         <div className={styles.contentContainer}>
           <NotificationHeader />
-          <Notification
-            user={user}
-            action={'follow'}
-            isRead={false}
-            notificationDate={new Date()}
-          />
+          {users.map((user) =>
+            <Notification key={user.username} user={user} />
+          )}
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 {
   "name": "notifications",
   "version": "0.1.0",
+  "bin": {"images":"./public/images"},
   "private": true,
   "dependencies": {
     "@fluentui/react": "^8.104.1",

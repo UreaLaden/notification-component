@@ -4,4 +4,5 @@ export const white = "#FFFFFF";
 export const veryDarkBlue= "#1C202B";
 export const darkGreyBlue= "#5E6778";
 export const blue = "#0A327B";
-
+export const veryLightBlue = "#DDE7EE";
+export const red = "#F65552";

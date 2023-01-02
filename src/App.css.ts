@@ -1,5 +1,5 @@
 import { mergeStyleSets } from "@fluentui/react";
-import { blue, darkGreyBlue, snow, veryDarkBlue, white } from "./utilities/colors";
+import {  snow, white } from "./utilities/colors";
 
 export const styles = mergeStyleSets({
     parentContainer: {
@@ -11,7 +11,7 @@ export const styles = mergeStyleSets({
     },
     appContainer: {
         backgroundColor: white,
-        height: "85vh",
+        height: "100vh",
         borderRadius: "2%",
         "grid-row-start": 1,
         "grid-column-start": 1,
@@ -20,8 +20,8 @@ export const styles = mergeStyleSets({
         "justify-content": "center",
         boxShadow: "0 6px 90px 0 rgb(0 0 0 / 5%)",
         "@media screen and (max-width:500px)": {
-            width: "100%",
-            height: "100%",
+            width: "100vw",
+            height: "100vh",
             backgroundColor: white,
             margin: "unset"
         },

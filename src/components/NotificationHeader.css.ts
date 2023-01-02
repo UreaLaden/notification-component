@@ -35,5 +35,6 @@ export const styles = mergeStyleSets({
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems:"center",
+        paddingBottom:"5%"
     },
 })
