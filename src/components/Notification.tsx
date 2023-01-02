@@ -63,12 +63,14 @@ const Notification = (props:INotificationProps) => {
         }
         return result;
     }
-
+    console.log(process.env.PUBLIC_URL);
+    console.log(user.imageUrl);
     return (
         <div className={isRead ? styles.entryContainer : styles.entryContainerNew}>
             <Persona 
                 imageUrl={user.imageUrl}
-                text={`${user.username} ${getNotificationAction(user,action)}`}
+                imageInitials={"LM"}
+                text={`${getNotificationAction(user,action)}`}
                 secondaryText={calculateTimeSpan(notificationDate)} />
         </div>
     )
