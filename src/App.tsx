@@ -13,9 +13,12 @@ function App() {
       <div className={styles.appContainer}>
         <div className={styles.contentContainer}>
           <NotificationHeader />
+          <div className={styles.entryContainer}>
+
           {users.map((user) =>
             <Notification key={user.username} user={user} />
-          )}
+            )}
+            </div>
         </div>
       </div>
     </div>

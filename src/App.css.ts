@@ -9,6 +9,11 @@ export const styles = mergeStyleSets({
         display: "grid",
         'grid-template-columns': "1fr"
     },
+    entryContainer:{
+        display:"flex",
+        flexDirection:"column",
+        gap:"16px"
+    },
     appContainer: {
         backgroundColor: white,
         height: "100vh",
