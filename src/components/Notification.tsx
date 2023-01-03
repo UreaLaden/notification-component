@@ -2,10 +2,6 @@ import { Persona, PersonaSize, Stack } from '@fluentui/react';
 import { NotificationAction, UserDetailProps } from '../utilities/users';
 import { styles } from './Notification.css';
 
-
-
-
-
 interface INotificationProps {
     user: UserDetailProps;
 }

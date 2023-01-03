@@ -1,46 +1,96 @@
-# Getting Started with Create React App
+# Frontend Mentor - Notifications page solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Notifications page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Overview
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### The challenge
 
-### `npm test`
+Users should be able to:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Distinguish between "unread" and "read" notifications
+- Select "Mark all as read" to toggle the visual state of the unread notifications and set the number of unread messages to zero
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
 
-### `npm run build`
+### Screenshot
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![](./public/app-mobile.png)
+![](./public/app-desktop.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Links
 
-### `npm run eject`
+- Solution URL: [click here](https://www.frontendmentor.io/solutions/notifications-page-6PVuOOvRx0)
+- Live Site URL: [click here](https://urealaden.github.io/notification-component/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## My process
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Built with
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Fluent UI](https://developer.microsoft.com/en-us/fluentui#/controls/web) - Cross Platform UX framework
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### What I learned
 
-## Learn More
+I decided to continue playing around with Fluent UI and Typescript. In particular manipulating the Persona attributes. Styling the individual elements was a bit tedius with typescript
+To see how you can add code snippets, see below:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```js
+<Persona
+  imageUrl={user.imageUrl}
+  size={PersonaSize.size48}
+  showSecondaryText={true}
+  secondaryText={user.timeSpan}
+  onRenderPrimaryText={() => {
+    return (
+      <div className={styles.primaryTextContainer}>
+        <div className={styles.primaryText}>
+          {userAction[0]}
+          <span className={styles.primaryTextAction}>{userAction[1]}</span>
+          {user.action !== NotificationAction.MESSAGE &&
+            user.action !== NotificationAction.COMMENT && (
+              <span className={getUserTargetClass(user.action)}>
+                {userAction[2]}
+                <span
+                  className={user.isRead ? styles.readBubble : styles.newBubble}
+                ></span>
+              </span>
+            )}
+        </div>
+      </div>
+    );
+  }}
+  styles={{
+    secondaryText: styles.secondaryText,
+    primaryText: styles.primaryText,
+  }}
+/>
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Useful resources
+
+- [Persona Docs](https://developer.microsoft.com/en-us/fluentui#/controls/web/persona) 
+
+## Author
+
+- Website - [Leaundrae Mckinney](https://www.linkedin.com/in/leaundrae-mckinney/)
+- Frontend Mentor - [@UreaLaden](https://www.frontendmentor.io/profile/UreaLaden)
